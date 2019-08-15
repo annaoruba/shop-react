@@ -30,8 +30,6 @@ class ProductProvider extends Component {
         console.log('componentDidUpdate');
     }
 
-
-
     setProducts = () => {
         let productsTab = [];
         data.products.forEach(element => {
@@ -89,7 +87,7 @@ class ProductProvider extends Component {
             this.setState({
                 modalOpen: false
             })
-        }, 400000000000);
+        }, 2000);
     }
 
     handleSearch = (e) => {
@@ -182,6 +180,19 @@ class ProductProvider extends Component {
         return totalPrice;
     }
 
+    sumProdInCart = () => {
+        console.log("pppppppppppppp");
+        let totalProd = 0;
+        let totalProdTab = this.state.cart.map(prodInCart => totalProd += prodInCart.counter)
+        // let totalPrice = this.state.cart.reduce(function (sum, tax) {
+        //     return sum + tax.total;
+        // }, 0);
+        let totalProds = totalProdTab[totalProdTab.length - 1]
+        console.log(totalProdTab[totalProdTab.length - 1])
+        debugger;
+        return totalProd;
+    }
+
     // inCartStatus = () => {
     //     console.log("in cart state 1: " + this.state.products[0].inCart)
     //     console.log("in cart state 1 w jsonie: " + data.products[0].inCart)
@@ -197,7 +208,7 @@ class ProductProvider extends Component {
 
     render() {
         return (
-            <ProductContext.Provider value={{ ...this.state, handleDetails: this.handleDetails, addToCart: this.addToCart, handleSearch: this.handleSearch, counterPlus: this.counterPlus, counterMinus: this.counterMinus, sumTotal: this.sumTotal }}>
+            <ProductContext.Provider value={{ ...this.state, handleDetails: this.handleDetails, addToCart: this.addToCart, handleSearch: this.handleSearch, counterPlus: this.counterPlus, counterMinus: this.counterMinus, sumTotal: this.sumTotal, sumProdInCart: this.sumProdInCart }}>
                 {/* <button onClick={this.inCartStatus}>test</button> */}
                 {this.props.children}
             </ProductContext.Provider>

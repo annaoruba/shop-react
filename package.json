@@ -2,7 +2,7 @@
   "name": "shop",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://annaoruba.github.io/shop-react",
+  "homepage": "https://annaoruba.github.io/shop-react/",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "gh-pages": "^2.1.1",

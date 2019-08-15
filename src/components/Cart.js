@@ -8,8 +8,9 @@ class Cart extends Component {
     render() {
         return (
             <ProductConsumer>
-                {value => (<><table className="table">   <thead>
+                {value => (<><table className="table cartTable">   <thead>
     <tr>
+      <th scope="col">Zdjęcie</th>
       <th scope="col">Nazwa</th>
       <th scope="col">Ilość</th>
       <th scope="col">Cena</th>
@@ -21,15 +22,16 @@ class Cart extends Component {
                     prodInCart.counter > 0 ?
                         (
                             <tr>
-                                <td>{prodInCart.title}</td>
-                                <td>{prodInCart.counter}</td>
-                                <td>{prodInCart.price}</td>
-                                <td>{prodInCart.counter * prodInCart.price}</td>
-                                <td><button onClick={() => { value.counterPlus(prodInCart.id) }}><i class="material-icons">add</i></button></td>
-                                <td><button onClick={() => { value.counterMinus(prodInCart.id) }}><i class="material-icons">remove</i></button></td>
+                                <td data-label="Zdjęcie"><img class="cartImg" src={prodInCart.photoUrl} /></td>
+                                <td data-label="Nazwa">{prodInCart.title}</td>
+                                <td data-label="Ilość">{prodInCart.counter}</td>
+                                <td data-label="Cena">{prodInCart.price}</td>
+                                <td data-label="Razem">{prodInCart.counter * prodInCart.price}</td>
+                                <td data-label="Dodaj"><button className="ProductCard__Counter" onClick={() => { value.counterPlus(prodInCart.id) }}><i class="material-icons">add</i></button></td>
+                                <td data-label="Odejmij"><button className="ProductCard__Counter" onClick={() => { value.counterMinus(prodInCart.id) }}><i class="material-icons">remove</i></button></td>
                             </tr>
                         ) : ""
-                )}</tbody></table> <div>Suma: {value.sumTotal()}</div></>)
+                )}</tbody></table> <div class="cartSum">Suma: <b>{value.sumTotal()}zł.</b></div></>)
                 }
             </ProductConsumer>
         );

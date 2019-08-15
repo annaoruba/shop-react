@@ -1,10 +1,40 @@
 @import '~material-icons/iconfont/material-icons.css';
 
+$background-color: #dadada;
+$buttons-color: #242582;
+$main-color: #2f2fa2;
+$base-color: #99738e;
+
 .modalOpen{
     position: fixed;
-    top: 0;
+    width: 50vw;
+    /* height: 140px; */
+    top: 50px;
+    left: 50%;
+    //margin-top: -70px;
+    margin-left: -25vw;
+    background-color: #04041b;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 25px 50px;
+    color: white;
     z-index: 10000;
+    border-radius: 10px;
+    justify-content: center;
 }
+
+.inputContainer{
+    position: relative;
+    i{
+        position: absolute;
+        right: 8px;
+        top: 5px;
+        font-size: 21px;
+        color: lightgray;
+    }
+}
+
 
 .inputSearch{
     border: 1px solid lightgray;
@@ -26,11 +56,11 @@
 .ProductList {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -8px;
+    margin: 40px -8px;
 }
 
 .ProductList__Element {
-    padding: 8px;
+    padding: 25px;
     width: 100%;
 }
 
@@ -154,5 +184,204 @@
 @media screen and (min-width: 1200px) {
     .Container {
         max-width: 1140px;
+    }
+}
+
+.ProductCard__Button{
+    color: #fff;
+    background-color: $buttons-color;
+    border: none;
+    font-size: 14px;
+    padding: 7px 14px;
+    border-radius: 4px;
+    //margin-top: 16px;
+    span{
+        display: flex;
+        align-items: center;
+    }
+    i{
+        font-size: 16px;
+        padding-left: 10px;
+    }
+}
+
+.ProductCard__Button:disabled
+{
+    opacity: 0.5;
+}
+
+.ProductCard__Counter{
+    background-color: transparent;
+    border: none;
+    i{
+        font-size: 20px;
+    }
+}
+
+.card-title{
+    color: #212529;
+}
+
+.navbar{
+    background-color: white;
+    box-shadow: 0 0 4px gray;
+}
+
+.navbar__Cart{
+    height: 32px;
+    display: flex;
+    align-items: center;
+    i{
+        color: #212529;
+        font-size: 32px;
+    }
+}
+
+a:hover {
+    color: transparent !important;
+}
+
+.navbar__Counter{
+    color: #212529;
+    font-weight: 600;
+}
+
+.modalClose{
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.cartImg{
+    height: 100px;
+}
+
+.cartTable{
+    background-color: white;
+    margin-top: 40px;
+}
+
+.cartTable {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  
+  .cartTable th,
+  .cartTable td {
+    padding: .625em;
+    text-align: center;
+    vertical-align: middle !important;
+  }
+  
+  .cartTable th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .cartTable {
+      border: 0;
+    }
+  
+    .cartTable caption {
+      font-size: 1.3em;
+    }
+    
+    .cartTable thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    .cartTable tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    .cartTable td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    .cartTable td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    .cartTable td:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  .cartSum{
+    font-size: 25px;
+    text-align: right;
+  }
+
+  .ProductDetails {
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 32px;
+    margin-top: 40px;
+}
+
+.ProductDetails__PhotoCol {
+    padding: 16px;
+    width: 100%;
+}
+
+.ProductDetails__DetailsCol {
+    padding: 16px;
+    width: 100%;
+}
+
+.ProductDetails__Photo {
+    width: 100%;
+    text-align: center;
+}
+
+.ProductDetails__Img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.ProductDetails__Description {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 14px;
+}
+
+@media screen and (min-width: 992px) {
+    .ProductDetails {
+        flex-direction: row;
+    }
+
+    .ProductDetails__PhotoCol {
+        width: 40%;
+    }
+
+    .ProductDetails__DetailsCol {
+        padding: 16px;
+        width: 60%;
     }
 }

@@ -9,7 +9,7 @@ class Modal extends Component {
             {
                 value => value.modalOpen ? (
                 <div className="modalOpen">{value.lastAdd.title} zostal dodany do koszyka</div>
-                ) : ''
+                ) : (<div className="modalOpen modalClose">{value.lastAdd.title} zostal dodany do koszyka</div>)
             }
 
         </ProductConsumer>
