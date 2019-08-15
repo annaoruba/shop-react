@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/shop-react/static/css/main.92b82b49.chunk.css",
+    "main.css": "/shop-react/static/css/main.790a35e7.chunk.css",
     "main.js": "/shop-react/static/js/main.b83f78b4.chunk.js",
     "main.js.map": "/shop-react/static/js/main.b83f78b4.chunk.js.map",
     "runtime~main.js": "/shop-react/static/js/runtime~main.97a3544a.js",
@@ -9,10 +9,10 @@
     "static/js/2.d446b196.chunk.js": "/shop-react/static/js/2.d446b196.chunk.js",
     "static/js/2.d446b196.chunk.js.map": "/shop-react/static/js/2.d446b196.chunk.js.map",
     "index.html": "/shop-react/index.html",
-    "precache-manifest.6cb0406b6a3182908b0379954bf1eba7.js": "/shop-react/precache-manifest.6cb0406b6a3182908b0379954bf1eba7.js",
+    "precache-manifest.26f7269b948de5d9434efd432ac17eca.js": "/shop-react/precache-manifest.26f7269b948de5d9434efd432ac17eca.js",
     "service-worker.js": "/shop-react/service-worker.js",
     "static/css/2.2cfeace5.chunk.css.map": "/shop-react/static/css/2.2cfeace5.chunk.css.map",
-    "static/css/main.92b82b49.chunk.css.map": "/shop-react/static/css/main.92b82b49.chunk.css.map",
+    "static/css/main.790a35e7.chunk.css.map": "/shop-react/static/css/main.790a35e7.chunk.css.map",
     "static/media/App.scss": "/shop-react/static/media/MaterialIcons-Regular.d120c85b.ttf"
   }
 }
