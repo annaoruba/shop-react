@@ -31,7 +31,7 @@ class Cart extends Component {
                                 <td data-label="Odejmij"><button className="ProductCard__Counter" onClick={() => { value.counterMinus(prodInCart.id) }}><i class="material-icons">remove</i></button></td>
                             </tr>
                         ) : ""
-                )}</tbody></table> <div class="cartSum">Suma: <b>{value.sumTotal()}zł.</b></div></>)
+                )}</tbody></table> <div class="cartSum">Suma: <b>{value.sumTotal()}zł</b></div></>)
                 }
             </ProductConsumer>
         );

@@ -17,7 +17,7 @@ class Details extends Component {
                             </div>
                             <div className="ProductDetails__DetailsCol">
                                 <h5>{value.detailsProduct.title}</h5>
-                                <div>{value.detailsProduct.price} zł.</div>
+                                <div>{value.detailsProduct.price} zł</div>
                                 <div className="ProductDetails__Description" >{value.detailsProduct.description}</div>
                                 <button class="ProductCard__Button" ><span>Dodaj do koszyka<i class="material-icons">shopping_cart</i></span>
                                 </button>

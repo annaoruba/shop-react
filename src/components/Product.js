@@ -18,15 +18,16 @@ class Product extends Component {
                             <Link to={`/details/${this.props.product.id}`}>
                                 <h5 className="card-title" onClick={() => {value.handleDetails(this.props.product.id)}}>{this.props.product.title}</h5>
                             </Link>
-                            <div>{this.props.product.price} zł.</div>
                             <StarRatings
                                 rating={this.props.product.rating}
                                 starDimension="20px"
                                 starSpacing="5px"
                                 starRatedColor="#DAA520"
+                                className="ProductCard_starRatings"
                             />
-                            <div>{this.props.product.description.slice(0, 150)}...</div>
-                            <div class="d-flex align-items-center">
+                            <div className="ProductCard_Description">{this.props.product.description.slice(0, 150)}...</div>
+                            <div className="ProductCard_Price">{this.props.product.price} zł</div>
+                            <div className="d-flex align-items-center">
                             {
                                     this.props.product.inCart ? (<button class="ProductCard__Counter d-flex align-items-center" onClick={() => { value.counterPlus(this.props.product.id) }}><i class="material-icons">add</i></button>) : ""
                             }

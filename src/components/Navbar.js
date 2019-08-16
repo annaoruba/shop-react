@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ProductConsumer } from '../context'
+import { ProductConsumer } from '../context';
+import logo from '../img/shop-logo2.PNG';
 
 
 class Navbar extends React.Component {
@@ -8,7 +9,7 @@ class Navbar extends React.Component {
         return (
             <nav className="navbar sticky-top">
                 <div class="container">
-                    <Link to="/">logo</Link>
+                    <Link to="/"><img src={logo}/></Link>
                     <ProductConsumer>
                         {value => (<div class="inputContainer"><input className="inputSearch" placeholder="Szukaj..." onChange={(e) => { value.handleSearch(e) }} /> <i class="material-icons">search</i> </div>)
                         }

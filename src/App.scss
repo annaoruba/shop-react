@@ -220,6 +220,7 @@ $base-color: #99738e;
 
 .card-title{
     color: #212529;
+    margin-bottom: 0.2rem;
 }
 
 .navbar{
@@ -384,4 +385,28 @@ a:hover {
         padding: 16px;
         width: 60%;
     }
+
+    .inputSearch{
+        width: 400px;
+    }
+
+    .inputContainer{
+        margin-right: 150px;
+    }
+}
+
+.ProductCard_Description{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+.ProductCard_Price
+{
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.ProductCard_starRatings{
+    margin: 5px 0px;
 }

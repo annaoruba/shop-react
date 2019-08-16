@@ -148,10 +148,13 @@ class ProductProvider extends Component {
     counterMinus = (id) => {
         console.log("counter minus")
         let productTemp = [...this.state.products];
+        let tempCart = [...this.state.cart]
         const index = productTemp.indexOf(this.getDetails(id));
         let product = productTemp[index];
+        let productCart = tempCart[index]
         if (product.counter == 1) {
-            product.inCart = false
+            productCart.inCart = false;
+            tempCart.splice(index, 1);
         }
             product.counter = product.counter - 1;
             let price = product.price * product.counter;
@@ -160,7 +163,7 @@ class ProductProvider extends Component {
                 () => {
                     return {
                         products: productTemp,
-                        cart: [...this.state.cart],
+                        cart: tempCart,
                     }
                 }
             )
