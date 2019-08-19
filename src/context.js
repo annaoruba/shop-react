@@ -152,9 +152,18 @@ class ProductProvider extends Component {
         const index = productTemp.indexOf(this.getDetails(id));
         let product = productTemp[index];
         let productCart = tempCart[index]
+        debugger;
         if (product.counter == 1) {
-            productCart.inCart = false;
-            tempCart.splice(index, 1);
+            product.inCart = false;
+            //product.counter = 0;
+            for(var i = 0; i < tempCart.length; i++) {
+                if((tempCart[i].id - 1) == index) {
+                    tempCart.splice(i, 1);
+                    debugger
+                    break;
+                }
+            }
+            //tempCart.splice(index, 1);
         }
             product.counter = product.counter - 1;
             let price = product.price * product.counter;

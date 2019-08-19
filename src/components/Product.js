@@ -23,7 +23,6 @@ class Product extends Component {
                                 starDimension="20px"
                                 starSpacing="5px"
                                 starRatedColor="#DAA520"
-                                className="ProductCard_starRatings"
                             />
                             <div className="ProductCard_Description">{this.props.product.description.slice(0, 150)}...</div>
                             <div className="ProductCard_Price">{this.props.product.price} zł</div>

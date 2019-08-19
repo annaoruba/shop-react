@@ -220,7 +220,7 @@ $base-color: #99738e;
 
 .card-title{
     color: #212529;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0 !important;
 }
 
 .navbar{
@@ -372,6 +372,12 @@ a:hover {
     margin-bottom: 14px;
 }
 
+.ProductCard__Price
+{
+    font-weight: 600;
+    font-size: 18px;
+}
+
 @media screen and (min-width: 992px) {
     .ProductDetails {
         flex-direction: row;
@@ -407,6 +413,18 @@ a:hover {
     margin-bottom: 5px;
 }
 
-.ProductCard_starRatings{
+.star-ratings{
     margin: 5px 0px;
+}
+
+.defaultPage{
+    font-size: 20px;
+    background: white;
+    border-radius: 10px;
+    padding: 40px;
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
 }
