@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/shop-react/static/css/main.6ab2413d.chunk.css",
-    "main.js": "/shop-react/static/js/main.d69c8271.chunk.js",
-    "main.js.map": "/shop-react/static/js/main.d69c8271.chunk.js.map",
+    "main.css": "/shop-react/static/css/main.7785a94e.chunk.css",
+    "main.js": "/shop-react/static/js/main.0f3c71e4.chunk.js",
+    "main.js.map": "/shop-react/static/js/main.0f3c71e4.chunk.js.map",
     "runtime~main.js": "/shop-react/static/js/runtime~main.97a3544a.js",
     "runtime~main.js.map": "/shop-react/static/js/runtime~main.97a3544a.js.map",
     "static/css/2.2cfeace5.chunk.css": "/shop-react/static/css/2.2cfeace5.chunk.css",
-    "static/js/2.cdda90fb.chunk.js": "/shop-react/static/js/2.cdda90fb.chunk.js",
-    "static/js/2.cdda90fb.chunk.js.map": "/shop-react/static/js/2.cdda90fb.chunk.js.map",
+    "static/js/2.4d661f4d.chunk.js": "/shop-react/static/js/2.4d661f4d.chunk.js",
+    "static/js/2.4d661f4d.chunk.js.map": "/shop-react/static/js/2.4d661f4d.chunk.js.map",
     "index.html": "/shop-react/index.html",
-    "precache-manifest.4ebca4a67e68bddd09a907d2a0213bc8.js": "/shop-react/precache-manifest.4ebca4a67e68bddd09a907d2a0213bc8.js",
+    "precache-manifest.1bd67dd18e59a5d8aff31ecf1c52cee3.js": "/shop-react/precache-manifest.1bd67dd18e59a5d8aff31ecf1c52cee3.js",
     "service-worker.js": "/shop-react/service-worker.js",
     "static/css/2.2cfeace5.chunk.css.map": "/shop-react/static/css/2.2cfeace5.chunk.css.map",
-    "static/css/main.6ab2413d.chunk.css.map": "/shop-react/static/css/main.6ab2413d.chunk.css.map",
+    "static/css/main.7785a94e.chunk.css.map": "/shop-react/static/css/main.7785a94e.chunk.css.map",
     "static/media/App.scss": "/shop-react/static/media/MaterialIcons-Regular.d120c85b.ttf",
     "static/media/shop-logo2.PNG": "/shop-react/static/media/shop-logo2.b9c53aa1.PNG"
   }
