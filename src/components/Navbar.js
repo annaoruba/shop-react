@@ -4,6 +4,7 @@ import { ProductConsumer } from '../context';
 import logo from '../img/shop-logo2.PNG';
 
 
+
 class Navbar extends React.Component {
     render() {
         return (

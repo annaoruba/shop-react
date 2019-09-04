@@ -5,7 +5,7 @@ class Default extends Component {
     render() {
         return (
             <div class="defaultPage">
-               Podany adres jest nieprawidłowy
+               Podany adres jest nieprawidłowy.
             </div>
         );
     }

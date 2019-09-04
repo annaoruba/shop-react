@@ -52,12 +52,16 @@ export function register(config) {
       }
     });
   }
+  else{
+    console.log("sw no register. Current process: " + process.env.NODE_ENV)
+  }
 }
 
 function registerValidSW(swUrl, config) {
   navigator.serviceWorker
     .register(swUrl)
     .then(registration => {
+      console.log("sw is registered")
       registration.onupdatefound = () => {
         const installingWorker = registration.installing;
         if (installingWorker == null) {
