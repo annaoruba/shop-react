@@ -428,3 +428,14 @@ a:hover {
     margin-right: auto;
     margin-top: 40px;
 }
+
+.add-button {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    z-index: 10000;
+    color: #fff;
+    background-color: #242582;
+    border: none;
+    padding: 10px 20px;
+  }

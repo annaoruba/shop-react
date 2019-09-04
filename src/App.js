@@ -7,6 +7,7 @@ import Cart from './components/Cart'
 import Details from './components/Details'
 import Default from './components/Default'
 import Modal from './components/Modal'
+import AddButton from './components/AddBtn'
 
 class App extends Component {
   render() {
@@ -26,6 +27,7 @@ class App extends Component {
         </Switch>
         <Modal/>
         </main>
+        <AddButton/>
       </>
     );
   }
